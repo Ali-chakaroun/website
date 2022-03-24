@@ -1,0 +1,315 @@
+body{
+
+}
+.sidenav1 {
+  height: 100%;
+  width: 190px;
+  position: absolute;
+  margin-top: 40px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: darkblue;
+}
+
+.sidenav1 .User-Tab a,.sidenav1 .Todo a,.sidenav1 .Adminpage a{
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 6px 6px 0;
+  text-decoration: none;
+  color: white;
+  display: block;
+  border: none
+  background-color:none;
+  text-decoration: none;
+}
+
+.sidenav1 .User-Tab a:hover,.sidenav1 .Todo a:hover,.sidenav1 .Adminpage a:hover{
+  color: orange;
+  transition: 0.5s;
+}
+
+
+.numberofusers{
+  background-color: white;
+  position: relative;
+  width: 200px;
+  top:30px;
+  height: 200px;
+  left: 210px;
+}
+.numberofusers img {
+  width: 100%;
+  height: 90%;
+}
+.numberofusers .numbers{
+
+  position: relative;
+  text-align: center;
+
+  color:red;
+}
+.toptext{
+background-color: inherit;
+z-index: -1;
+  height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.toptext p{
+font-size: 20px;
+font-weight: bold;
+font-family: arial, sans-serif;
+}
+.Table {
+  font-family: arial, sans-serif;
+  background-color: white;
+  border-collapse: collapse;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  position:relative;
+
+
+}
+.Tablescroll{
+
+  background-color: inherit;
+  width: 50%;
+  max-height: 500px;
+  overflow: auto;
+  margin-left: 200px;
+  position: relative;
+
+}
+.Tablescrolledit{
+
+  background-color: inherit;
+  width: 70%;
+  max-height: 500px;
+  overflow: auto;
+  margin-left: 200px;
+  position: relative;
+
+}
+.Tablecontent {
+  font-family: arial, sans-serif;
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.Table td,.Table th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 15px;
+}
+.Table button{
+  text-align: center;
+  border: none;
+  background-color: white;
+  left: 0;
+}
+ .Table button:hover{
+  cursor: pointer;
+  color: white;
+  background-color: orange;
+  transition: 0.4s;
+}
+.Table button.Edit{
+  background-color: green;
+  width: 60px;
+  height: 30px;
+}
+.Table button.Delete{
+  background-color: red;
+  width: 60px;
+  height: 30px;
+
+}
+.Table button.Cancle{
+  background-color: red;
+  width: 60px;
+  height: 30px;
+
+}
+.Table input{
+  left: 0;
+  color: red;
+}
+
+
+.Box{
+  width: 800px;
+  max-height: 300px;
+  border-radius: 5px;
+background-color: white;
+  left:200px;
+  overflow: auto;
+  margin: 20px;
+  position: relative;
+}
+.Box .Header{
+  margin: 10px;
+  color: black;
+  background-color: inherit;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  word-wrap: break-word;
+}
+.Box .Todotext{
+  margin: 10px;
+  width: 600px;
+  height: 100px;
+  outline: none;
+  border: none;
+  resize: none;
+  position: relative;
+  background-color: white;
+
+}
+.Box .finish{
+  background-color: inherit;
+  bottom: 0;
+  right: 0;
+  float: right;
+  display: inline-block;
+  position: sticky;
+}
+.Box .Completelist,.Box .Deletelist{
+width: 60px;
+height: 40px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  float: right;
+  margin: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+.Box .Completelist{
+  background-color: green;
+}
+.Box .Deletelist{
+  background-color: red;
+}
+.Box button:hover{
+  color: white;
+  transition: 0.4s;
+}
+.Addtolist{
+
+  position: relative;
+  width: 200px;
+  height: 100px;
+  left: 200px;
+  margin: 20px;
+}
+
+.Addtolist .Add{
+  border-radius: 10px ;
+  background-color: white;
+  text-align: center;
+  width: 80px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 20px;
+  outline: none;
+}
+.Addtolist .Add:hover{
+color: orange;
+transition: 0.4;
+}
+
+
+.Edditingtable{
+  width: 800px;
+  max-height: 800px;
+  border-radius: 5px;
+background-color: white;
+  left:200px;
+  overflow: auto;
+  margin: 60px;
+  position: relative;
+}
+.Edditingtable .headertext{
+  width: 600px;
+height: 50px;
+outline: none;
+background-color: white;
+  overflow: auto;
+  margin: 20px;
+  left: 0;
+  position: relative;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid black;
+  color: black;
+}
+.Edditingtable .Bodytext{
+  width: 600px;
+height: 500px;
+resize: none;
+outline: none;
+background-color: white;
+  overflow: auto;
+  margin: 20px;
+  position: relative;
+  text-align: left;
+  border: none;
+}
+.Edditingtable #headercount,.Edditingtable #bodycount{
+    margin: 10px;
+    float: right;
+    position: relative;
+    background-color: inherit;
+}
+.Edditingtable span{
+
+}
+.Edditingtable .Editlistbuttons{
+  background-color: inherit;
+  bottom: 0;
+  right: 0;
+  float: right;
+  display: inline-block;
+  position: absolute;
+}
+
+.Editlistbuttons .Savelist,.Editlistbuttons .Cancle{
+width: 60px;
+height: 40px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  float: right;
+  margin: 10px;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+.Editlistbuttons .Savelist{
+  background-color: green;
+
+}
+.Editlistbuttons .Cancle{
+  background-color: red;
+
+}
+.Editlistbuttons button:hover{
+  color: white;
+  transition: 0.4s;
+}

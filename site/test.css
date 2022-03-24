@@ -1,0 +1,492 @@
+body {
+    background-image: url('Mainpage/MainPage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+
+  overflow: hidden;
+  background-color: black;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  margin-right: 10px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: red;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown .dropbtn a{
+
+  color: red;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.IMG {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    transition: .5s;
+    margin: 30px;
+   overflow:hidden;
+}
+
+    .IMG img {
+        width: 300px;
+        height: 300px;
+        transition: .3s;
+        border-radius: 5px;
+        visibility: visible;
+
+    }
+
+
+    .IMG:hover img {
+        filter: blur(2px) brightness(60%) grayscale(50%);
+        box-shadow: 0 0 16px cyan;
+        transition: .5s;
+        transform: scale(1.2);
+
+    }
+
+    h2 {
+        position: absolute;
+        z-index: 1;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        opacity: 0;
+        visibility:hidden;
+        transition: .5s;
+
+    }
+
+
+.IMG:hover :not(img) {
+          opacity: 1;
+    visibility: visible;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 1);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+    top:30%;
+    margin: 60px;
+
+}
+    .overlay-content img {
+        width: 300px;
+        height: 300px;
+        border-radius: 4px;
+        visibility: hidden;
+
+    }
+    .overlay-content:hover img {
+        /*filter: blur(1.1px)  grayscale(40%);*/
+
+    }
+.overlay-content h2 {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size:20px;
+    color: #fff;
+    opacity: 1;
+    visibility: visible;
+
+}
+    .overlay-content h3 {
+        position:absolute;
+        z-index: 1;
+        font-size:25px;
+        font-weight:bold;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        color: darkred;
+        opacity: 0;
+        visibility: hidden;
+        overflow:hidden;
+
+    }
+.signup{
+  margin: 0 auto;
+  width:80%;
+  background-color: white;
+}
+input {
+  left: 42%;
+ position: relative;
+ display: block;
+ margin: 10px;
+ text-align: center;
+
+}
+button.signupbutton {
+  left: 47%;
+ position: relative;
+ display: block;
+ margin: 10px;
+
+}
+
+
+.overlay a, .About-overlay .closebtn, .Services-overlay .closebtn, .Contact-overlay .closebtn {
+    padding: 40px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+        .overlay a:hover, .overlay a:focus, .overlay a:hover img ,.overlay-content:hover h3{
+
+            opacity: 1;
+            visibility: visible;
+
+        }
+
+.overlay-content:hover h2 {
+    opacity: 0;
+    visibility: visible;
+}
+
+.overlay .closebtn, .About-overlay .closebtn, .Services-overlay .closebtn, .Contact-overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    padding: 8px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        text-align: center;
+        float: none;
+    }
+
+    .overlay .closebtn, .About-overlay .closebtn, .Services-overlay .closebtn, .Contact-overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.button {
+
+margin:20px;
+
+}
+
+.Tab {
+margin: 0 auto;
+width:80%;
+
+}
+    .Tab p{
+    position: relative;
+      font-size: 30px;
+    }
+
+    /******************************************************************************************/
+    .About-overlay {
+        height: 70%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 30%;
+        left: 0;
+        background-image: url('Mainpage/MainPage.jpg');
+        /*background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 1);*/
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .About-us {
+
+        margin: 60px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+        .About-us p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+
+        }
+    .About-us-images img {
+        opacity: 1;
+        margin: 20px;
+        padding-left:50px;
+        position: relative;
+        width: 20%;
+        height: 20%;
+        display: inline-block;
+
+    }
+    /******************************************************************************************/
+    .Services-overlay {
+        height: 70%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 30%;
+        left: 0;
+        background-image: url('Mainpage/MainPage.jpg');
+        /*background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 1);*/
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .Services {
+        margin: 60px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+
+        .Services p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    .Services-images img {
+        opacity: 1;
+        margin: 20px;
+        padding-left: 50px;
+        position: relative;
+        width: 20%;
+        height: 20%;
+        display: inline-block;
+    }
+    /******************************************************************************************/
+    .Contact-overlay {
+        height: 70%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 30%;
+        left: 0;
+        background-image: url('Mainpage/MainPage.jpg');
+        /*background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 1);*/
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .Contact {
+        margin: 60px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+    }
+
+        .Contact p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+
+    .Contact-images img {
+        opacity: 1;
+        margin: 20px;
+        padding-left: 50px;
+        position: relative;
+        width: 20%;
+        height: 20%;
+        display: inline-block;
+    }
+    /******************************************************************************************/
+    .overlay-content:hover img, .overlay-content:hover h3, .overlay-content:not(:hover) h2 {
+        transition: 1s;
+        animation: fadeIn ease 1s;
+        -webkit-animation: fadeIn ease 1s;
+        -moz-animation: fadeIn ease 1s;
+        -o-animation: fadeIn ease 1s;
+        -ms-animation: fadeIn ease 1s;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @-ms-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+    /******************************************************************************************/
+    .overlay-content:not(:hover) img, .overlay-content:not(:hover) h3, .overlay-content:hover h2 {
+        transition: 1s;
+        animation: fadeOut ease 1s;
+        -webkit-animation: fadeOut ease 1s;
+        -moz-animation: fadeOut ease 1s;
+        -o-animation: fadeOut ease 1s;
+        -ms-animation: fadeOut ease 1s;
+    }
+
+        @keyframes fadeOut {
+            0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @-webkit-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @-o-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @-ms-keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
